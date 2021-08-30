@@ -1,32 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-#pragma once
-
-#include "CoreMinimal.h"
-#include "GameFramework/Actor.h"
-#include "CheckpointBlock.generated.h"
-
-UCLASS()
-class VRACER_API ACheckpointBlock : public AActor
-{
-	GENERATED_BODY()
-	
-public:	
-	// Sets default values for this actor's properties
-	ACheckpointBlock();
-
-	// Default Road Mesh
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-		class UStaticMeshComponent* RoadComponent;
-	UPROPERTY()
-		UStaticMesh* RoadMesh;
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d4a16bb5d1f3e8d7848c606bc56365b7705c91e0c2c734c06c0b0952a9ea74c
+size 720
